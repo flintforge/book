@@ -1,10 +1,10 @@
-# Appendix F - Newest Features
+## Appendix F - Newest Features
 
 This appendix documents features that have been added to stable Rust since the
 main part of the book was completed.
 
 
-## Field init shorthand
+### Field init shorthand
 
 We can initialize a data structure (struct, enum, union) with named
 fields, by writing `fieldname` as a shorthand for `fieldname: fieldname`.
@@ -35,7 +35,7 @@ fn main() {
 ```
 
 
-## Returning from loops
+### Returning from loops
 
 One of the uses of a `loop` is to retry an operation you know can fail, such as
 checking if a thread completed its job. However, you might need to pass the
@@ -58,7 +58,7 @@ fn main() {
 }
 ```
 
-## Nested groups in `use` declarations
+### Nested groups in `use` declarations
 
 If you have a complex module tree with many different submodules and you need
 to import a few items from each one, it might be useful to group all the
@@ -113,7 +113,7 @@ fn main() {
 The `...` syntax is still accepted in matches, but it is not accepted in
 expressions. `..=` should be preferred.
 
-## 128-bit integers
+### 128-bit integers
 
 Rust 1.26.0 added 128-bit integer primitives:
 
